@@ -1,9 +1,9 @@
 document.getElementById('sosButton').addEventListener('click', function () {
     if ('vibrate' in navigator) {
-        let sosPattern = [200, 200, 200, 500, 500, 500, 200, 200, 200];
+        let sosPattern = [200, 100, 200, 100, 200, 600, 600, 600, 200, 100, 200, 100, 200];
         
         navigator.vibrate(sosPattern);
     } else {
-        alert("Vibration API is not supported on this device.");
+        alert("Wibracje nie działają na tym urządzeniu!");
     }
 });
